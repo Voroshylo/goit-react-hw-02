@@ -1,5 +1,5 @@
 import css from './Description.module.css'
-const Descriprion=() => {
+const Description=() => {
   return (
     <div>
       <h2 className={css.title}>Sip Happens Café</h2>
@@ -7,4 +7,4 @@ const Descriprion=() => {
     </div>
   )
 }
-export default Descriprion
+export default Description

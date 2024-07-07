@@ -1,0 +1,16 @@
+.pG{
+text-shadow: 4px 4px 6px rgba(0, 255, 22, 1);
+}
+.pN{
+text-shadow: 4px 4px 6px rgba(255, 238, 0, 1);
+}
+.pB{
+text-shadow: 4px 4px 6px rgba(255, 0, 0, 1);
+}
+
+.div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

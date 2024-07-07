@@ -1,12 +1,17 @@
-import css from './Option.module.css'
-const Option = () => {
+
+import css from './Option.module.css';
+
+const Option = ({ updateFeedback, resetFeedback, totalFeedback }) => {
   return (
-    <div>
-      <button className={css.btn}>Good</button>
-      <button className={css.btn}>Neutral</button>
-      <button className={css.btn}>Bad</button>
-      <button className={css.btn}>Reset</button>
+    <div className={css.div}>
+      <button className={css.btnGood} onClick={() => updateFeedback('good')}>Good</button>
+      <button className={css.btnNeutral} onClick={() => updateFeedback('neutral')}>Neutral</button>
+      <button className={css.btnBad} onClick={() => updateFeedback('bad')}>Bad</button>
+      {totalFeedback > 0 && (
+        <button className={css.btnReset} onClick={resetFeedback}>Reset</button>
+      )}
     </div>
-  )
-}
-export default Option
+  );
+};
+
+export default Option;
