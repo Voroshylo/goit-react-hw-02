@@ -3,6 +3,7 @@ import Feedback from './components/Feedback/Feedback';
 import Description from './components/Description/Description';
 import Options from './components/Options/Options';
 import Notification from './components/Notification/Notification';
+import LoginForm from './components/Form/Form';
 import './App.css';
 
 const App = () => {
@@ -47,6 +48,11 @@ const App = () => {
     ? Math.round((feedback.good / totalFeedback) * 100)
     : 0;
 
+  const handleLogin = (userData) => {
+    console.log(userData)
+  }
+  
+  
   return (
     <div className="app">
       <Description />
@@ -64,6 +70,8 @@ const App = () => {
       ) : (
         <Notification message="No feedback given yet." />
       )}
+      
+      <LoginForm onLogin={ handleLogin} />
     </div>
   );
 };
