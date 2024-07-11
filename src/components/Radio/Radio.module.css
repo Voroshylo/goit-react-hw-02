@@ -1,0 +1,19 @@
+.div{
+display: flex;
+flex-direction: column;
+gap: 15px;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.label{
+
+}
+.input{
+width: 20px;
+height: 20px;
+box-shadow: 8px 8px 24px 0px rgba(0, 22, 255, 1);
+}
+.title{
+font-size: 32px;
+}

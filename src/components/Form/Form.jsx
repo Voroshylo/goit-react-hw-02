@@ -6,6 +6,7 @@ import css from './Form.module.css'
 const LoginForm = () => {
   const loginId = useId();
   const passwordId = useId()
+  const selectId = useId()
   const [formData, setFormData] = useState({
     login: '',
     password: '',
@@ -50,19 +51,23 @@ const LoginForm = () => {
           type='password'
           name='password'
         />
-        <label>
+        <label htmlFor={selectId}>
           <span className={css.span}>Country</span>
-        </label>
-        <select 
+        
+          <select 
+            id={selectId}
           value={formData.country}
           onChange={handleChangeInput}
-          className={css.text}
-          name='country'>
-          <option value='Ukraine'>Ukraine</option>
-          <option value='Poland'>Poland</option>
-          <option value='France'>France</option>
-          <option value='USA'>USA</option>
+          className={css.select}
+            name='country'>
+            
+          <option value='uk'>Ukraine</option>
+          <option value='en'>English</option>
+          <option value='fr'>France</option>
+            <option value='usa'>USA</option>
+            
           </select>
+          </label>
     <button className={css.btn} type='submit'>Login</button>
       </form>
       </div>

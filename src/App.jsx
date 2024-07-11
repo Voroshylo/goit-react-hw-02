@@ -5,6 +5,7 @@ import Options from './components/Options/Options';
 import Notification from './components/Notification/Notification';
 import LoginForm from './components/Form/Form';
 import './App.css';
+import RadioTap from './components/Radio/Radio';
 
 const App = () => {
  
@@ -71,7 +72,8 @@ const App = () => {
         <Notification message="No feedback given yet." />
       )}
       
-      <LoginForm onLogin={ handleLogin} />
+      <LoginForm onLogin={handleLogin} />
+      <RadioTap/>
     </div>
   );
 };
