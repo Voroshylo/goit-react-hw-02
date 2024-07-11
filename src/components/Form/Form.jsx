@@ -14,6 +14,10 @@ const LoginForm = () => {
   
   const handleSubmit = evt => {
     evt.preventDefault();
+    setFormData({
+      login: "",
+      password: ""
+    })
 
   };
 
